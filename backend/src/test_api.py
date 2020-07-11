@@ -3,8 +3,8 @@ import unittest
 import json
 from flask_sqlalchemy import SQLAlchemy
 
-from api import create_app
-from backend.src.database.models import setup_db, Tea, Catalog, Order, Client, Admin, Company
+from .api import create_app
+from .database.models import setup_db, Tea, Catalog, Order, Client, Admin, Company
 from dotenv import load_dotenv
 
 

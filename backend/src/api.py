@@ -5,8 +5,8 @@ from flask import Flask, request, jsonify, abort
 from flask_migrate import Migrate
 from flask_cors import CORS
 
-from backend.src.database.models import setup_db, db, Tea, Catalog, Order, Client, Admin, Company
-from backend.src.auth.auth import requires_auth, AuthError
+from .database.models import setup_db, db, Tea, Catalog, Order, Client, Admin, Company
+from .auth.auth import requires_auth, AuthError
 
 
 def create_app(env='PROD'):
