@@ -2,12 +2,10 @@ import os
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 
-from backend.src.api import create_app
+from backend.src.api import app
 from backend.src.database.models import db
 
 MIGRATION_DIR = os.path.join('backend', 'src', 'migrations')
-
-app = create_app()
 
 migrate = Migrate(app, db, directory=MIGRATION_DIR)
 manager = Manager(app)
