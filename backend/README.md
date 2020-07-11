@@ -120,7 +120,9 @@ export HILLTOP_CLIENT=<client JWT token>
     
 ## Api Reference
 
-    URL: The API is accessible locally with http://127.0.0.1:5000/
+    URL: The API is accessible:
+        on heroku with https://hilltoptea.herokuapp.com/
+        locally with http://127.0.0.1:5000/
     
     Authentication: Bearer Token based authentication using JSON Web Token (JWT)
 
