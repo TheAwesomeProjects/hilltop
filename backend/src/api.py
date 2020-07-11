@@ -25,7 +25,6 @@ def create_app(env='PROD'):
     # ROUTES
 
     @app.route('/tea', methods=['GET'])
-    @app.route('/', methods=['GET'])
     def get_tea():
         tea_list = Tea.query.order_by(Tea.id).all()
 
@@ -136,6 +135,7 @@ def create_app(env='PROD'):
                 abort(422, e)
 
     @app.route('/catalog', methods=['GET'])
+    @app.route('/', methods=['GET'])
     def get_catalog():
         catalog = Catalog.query.order_by(Catalog.id).all()
 
