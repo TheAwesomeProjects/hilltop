@@ -162,7 +162,7 @@ class HilltopTestCase(unittest.TestCase):
             "postal_code": "WC-001"
         }
 
-        self.invalid_admin= {
+        self.invalid_admin = {
             "name": None,
             "surname": None,
             "email": None,
