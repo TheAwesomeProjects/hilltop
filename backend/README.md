@@ -122,5 +122,5 @@ export HILLTOP_CLIENT=<client JWT token>
     
     Authentication: Bearer Token based authentication using JSON Web Token (JWT)
 
-[View the API_reference.md for Endpoint details.](./backend/API_reference.md)
+[View the API_reference.md for Endpoint details.](./API_reference.md)
 
