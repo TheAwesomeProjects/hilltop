@@ -104,13 +104,15 @@ python test_api.py
         - can `get:order`
         - can `post:order`
     - admin
-        - can perform all actions
-7. domain and API audience in auth.py module should be updated according to Auth0 account settings
-8. Register 2 users - assign the client role to one and admin role to the other.
-9. Sign into each account and make note of the JWT.
-10. In the  `/src` directory create `.env` file with following environmental variables:
+        - can perform all action
+7. Register 2 users - assign the client role to one and admin role to the other.
+8. Sign into each account and make note of the JWT.
+9. In the  `/src` directory create `.env` file with following environmental variables:
 
 ```
+export AUTH0_DOMAIN=<Auth0 domain>
+export ALGORITHMS=RS256
+export API_AUDIENCE=<API audience>
 export HILLTOP_ADMIN=<admin JWT token>
 export HILLTOP_CLIENT=<client JWT token>
 ```
