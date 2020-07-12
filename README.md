@@ -19,7 +19,7 @@ The application is designed with some key functional areas:
 
 ### Backend
 
-The `./backend` directory contains Flask application with SQLAlchemy module. The main python module is apy.py where 
+The `./backend` directory contains Flask application with SQLAlchemy module. The main python module is api.py where 
 all the endpoints used in application are specified. api.py references models.py for DB and SQLAlchemy setup. Auth0 is used 
 for authentication.
 
